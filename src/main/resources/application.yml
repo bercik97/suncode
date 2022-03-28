@@ -1,0 +1,20 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/suncode
+    username: postgres
+    password: admin
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddlAuto: create-drop
+    openInView: false
+    deferDatasourceInitialization: true
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8081
